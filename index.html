@@ -742,12 +742,57 @@
   </div>
 </footer>
 
-<!-- BACK TO TOP BUTTON  -->
-<a href="#" class="shadow btn-primary rounded-circle back-to-top">
-  <i class="fas fa-chevron-up"></i>
-</a>
+<!----- Cookie Start ----->
+<script src="dist/cookie.notice.js"></script>
+<script>
+  new cookieNoticeJS({
 
+    // Localizations of the notice message
+    'messageLocales': {
+      'it': 'Custom localized message'
+    },
 
+    // Localizations of the dismiss button text
+    'buttonLocales': {
+      'it': 'Chiudi'
+    },
+
+    // Position for the cookie-notifier (default=bottom)
+    'cookieNoticePosition':'bottom',
+
+    // Shows the "learn more button (default=false)
+    'learnMoreLinkEnabled':false,
+
+    // The href of the learn more link must be applied if (learnMoreLinkEnabled=true)
+    'learnMoreLinkHref':'/learn/more/index.html',
+
+    // Text for optional learn more button
+    'learnMoreLinkText':{
+      'en':'learn more',
+      'fr':'en savoir plus'
+    },
+
+    // The message will be shown again in X days
+    'expiresIn': 60,
+
+    // Dismiss button background color
+    'buttonBgColor': '#ffffff',
+
+    // Dismiss button text color
+    'buttonTextColor': '#1ea9f0',
+
+    // Notice background color
+    'noticeBgColor': '#070707',
+
+    // Notice text color
+    'noticeTextColor': '#1ea9f0',
+
+    // the lernMoreLink color (default='#009fdd')
+    'linkColor':'#000000'
+
+  });
+</script>
+<!----- Cookie End ----->
 
    
     <script src="assets/vendors/js/glightbox.min.js"></script>
